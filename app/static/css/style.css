@@ -1,0 +1,47 @@
+#menu {
+	word-spacing: 1em;
+}
+
+body {
+    background: #809995;
+}
+
+#menu li {
+	display: inline-block;
+	margin: 0px 15px;
+	text-decoration: none;
+    font-size: 32px;
+}
+
+#wrapper {
+	max-width: 66%;
+	margin: auto;
+	background: #4CB57F;
+}
+li a {
+    font-family: 'Amiri', serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover,
+a:focus {
+    color: #23527c;
+    text-decoration: none;
+}
+li {
+	margin-left: 5%;
+    font-size: 25px;
+}
+p {
+	padding: 10px 10px;
+	margin: 20px 10px;
+    font-size: 28px;
+}
+table {
+    background: #CEEDD8;
+	min-height: 85vh;
+}
+
+#bottom {
+    font-size: 14px;
+}

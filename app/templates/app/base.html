@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dzen</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Amiri:400italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div id="wrapper">
+        <div align="center" id="menu"><h1>
+            <ul>
+                <li><a href="\">Home</a></li>
+                <li><a href="\">Pictures</a></li>
+                <li><a href="\">Music</a></li>
+                <li><a href="\">Yoga</a></li>
+                <li><a href="\">Games</a></li>
+                <li><a href="\">Fire</a></li>
+            </ul>
+        </h1></div>
+
+        <table align="center" WIDTH="100%">
+            <td WIDTH="27%" align="center" valign="top">
+                <div>
+                    Здесь<br>будут<br>новости<br>как-то так<br>
+                </div>
+            </td>
+            <td  valign="top">
+
+		<div>
+			{% block content %}{% endblock %}
+		</div>
+            </td>
+        </table>
+
+        <p id="bottom">Здесь будет информация о нас</p>
+	</div>
+</body>
+</html>
