@@ -15,25 +15,24 @@
         <div align="center" id="menu"><h1>
             <ul>
                 <li><a href="\">Home</a></li>
-                <li><a href="\">Pictures</a></li>
-                <li><a href="\">Music</a></li>
-                <li><a href="\">Yoga</a></li>
-                <li><a href="\">Games</a></li>
-                <li><a href="\">Fire</a></li>
+                <li><a href="\picture">Pictures</a></li>
+                <li><a href="\music">Music</a></li>
+                <li><a href="\yoga">Yoga</a></li>
+                <li><a href="\game">Games</a></li>
+                <li><a href="\fire">Fire</a></li>
             </ul>
         </h1></div>
 
         <table align="center" WIDTH="100%">
             <td WIDTH="27%" align="center" valign="top">
-                <div>
-                    Здесь<br>будут<br>новости<br>как-то так<br>
+                <div class="block">
+                    Здесь<br>будут<br>новости<hr>как-то так<br>
                 </div>
             </td>
             <td  valign="top">
-
-		<div>
-			{% block content %}{% endblock %}
-		</div>
+                <div class="block">
+                    {% block content %}{% endblock %}
+                </div>
             </td>
         </table>
 
