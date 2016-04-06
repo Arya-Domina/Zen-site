@@ -3,6 +3,11 @@ body {
     margin: 0px;
 }
 
+#imgtop {
+    height: 25vh;
+    width: 100%;
+}
+
 #menu {
 	word-spacing: 1em;
 }#menu li {
@@ -11,6 +16,9 @@ body {
 	text-decoration: none;
     font-size: 32px;
 }
+#menu h1 {
+    margin: 10px 0px;
+}
 li a {
     font-family: 'Amiri', serif;
     text-decoration: none;
@@ -18,7 +26,7 @@ li a {
 }
 a:hover,
 a:focus {
-    color: #23527c;
+    color: #78a7cf;
     text-decoration: none;
 }
 
@@ -29,7 +37,7 @@ a:focus {
 }
 table {
 	background: #D5E0D2;
-	min-height: 83vh;
+	min-height: 60vh;
 	padding: 50px 90px;
 }
 .block {

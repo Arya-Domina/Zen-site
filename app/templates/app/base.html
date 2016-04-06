@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dzen</title>
+    <link rel="shortcut icon" href="/static/img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -12,8 +13,10 @@
 <body>
 
 	<div id="wrapper">
+        <img id="imgtop" src="{% static 'img/Top.jpg'%}">
         <div align="center" id="menu"><h1>
             <ul>
+                <li><img src="{% static 'img/paw.bmp'%}" height="37px" width="37px"></li>
                 <li><a href="\">Home</a></li>
                 <li><a href="\picture">Pictures</a></li>
                 <li><a href="\music">Music</a></li>
@@ -25,6 +28,16 @@
 
         <table align="center" WIDTH="100%">
             <td WIDTH="27%" align="center" valign="top">
+
+                <h3>Lucy Rose – Shiver</h3>
+                <audio preload="auto" loop controls style="width:93%">
+
+                    <source src="{% static 'music/Lucy Rose – Shiver.mp3'%}" type="audio/ogg; codecs=vorbis">
+                    <source src="{% static 'music/Lucy Rose – Shiver.mp3'%}" type="audio/mpeg">
+                    Тег audio не поддерживается вашим браузером.
+                    <a href="{% static 'music/Lucy Rose – Shiver.mp3'%}">Скачайте музыку</a>.
+                    <span>mew</span>
+                </audio>
                 <div class="block">
                     Здесь<br>будут<br>новости<hr>как-то так<br>
                 </div>
@@ -36,7 +49,7 @@
             </td>
         </table>
 
-        <p id="bottom">Здесь будет информация о нас</p>
+        <p id="bottom">Если сайт вам не помог, то пишите на почту: <a href="//Arya_domina@gmail.com">Arya_domina@gmail.com</a></p>
 	</div>
 </body>
 </html>
