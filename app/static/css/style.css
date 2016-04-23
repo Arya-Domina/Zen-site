@@ -4,7 +4,7 @@ body {
 }
 
 #imgtop {
-    height: 25vh;
+    height: 23vh;
     width: 100%;
 }
 
@@ -32,12 +32,13 @@ a:focus {
 
 #wrapper {
 	max-width: 66%;
+	min-width: 850px;
 	margin: auto;
 	background: #146A51;
 }
 table {
 	background: #D5E0D2;
-	min-height: 60vh;
+	min-height: 62vh;
 	padding: 50px 90px;
 }
 .block {
@@ -51,16 +52,52 @@ table {
 
 li {
 	margin-left: 5%;
-    font-size: 25px;
+    font-size: 22px;
 }
 p {
 	padding: 10px 10px;
 	margin: 20px 10px;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 #bottom {
     font-size: 14px;
     color: #ffffff;
 }
+
+
+
+.image {
+cursor:pointer;
+height: 100px;
+width: 100px;
+margin: 10px;
+}
+.popup {
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+display: none;
+text-align: center;
+}
+.popup_bg {
+background: rgba(0,0,0,0.4);
+position: absolute;
+background-repeat: repeat;
+z-index: 1;
+height: 100%;
+width: 100%;
+}
+.popup_img {
+position: relative;
+z-index: 2;
+max-height: 90vh;
+margin: 2% 0 0 0;
+}
+
+
+
+
 
