@@ -19,14 +19,18 @@ body {
 #menu h1 {
     margin: 10px 0px;
 }
-li a {
+#menu a {
     font-family: 'Amiri', serif;
     text-decoration: none;
     color: #ffffff;
 }
+#menu a:hover,
+#menu a:focus {
+    color: #78a7cf;
+    text-decoration: none;
+}
 a:hover,
 a:focus {
-    color: #78a7cf;
     text-decoration: none;
 }
 
