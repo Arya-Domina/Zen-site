@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from .models import YogaPost
 
 
 def index(request):
@@ -14,7 +15,14 @@ def music(request):
 
 
 def yoga(request):
-    return render(request, 'app/yoga.html')
+
+    posts = YogaPost.objects.all()
+    return render(request, 'app/yoga.html', {'posts': posts})
+
+
+def post_detail(request, pk):
+    post = get_object_or_404(YogaPost, pk=pk)
+    return render(request, 'app/post_detail.html', {'post': post})
 
 
 def game(request):
