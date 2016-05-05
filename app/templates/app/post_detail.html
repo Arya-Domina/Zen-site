@@ -1,9 +1,11 @@
 {% extends 'app/base.html' %}
+{% load staticfiles %}
 <html>
 {% block content %}
 <div>
     <p>{{ post.title }}</p>
     <p>{{ post.text|linebreaks }}</p>
+    <img src="{{ post.image.url }}">
 </div>
 {% endblock %}
 </html>

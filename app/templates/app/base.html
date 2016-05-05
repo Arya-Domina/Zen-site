@@ -3,45 +3,41 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    {% block contenttitle %}{% endblock %}
+    {% block title %}{% endblock %}
     <title>Zen</title>
-    <link rel="shortcut icon" href="/static/img/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/images/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href='https://fonts.googleapis.com/css?family=Amiri:400italic' rel='stylesheet' type='text/css'>
 
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </head>
 <body>
 
 	<div id="wrapper">
-        <img id="imgtop" src="{% static 'img/Top.jpg'%}">
+        <img id="imgtop" src="{% static 'images/Top.jpg'%}">
         <div align="center" id="menu"><h1>
             <ul>
-                <li><img src="{% static 'img/paw.bmp'%}" height="37px" width="37px"></li>
+                <li><img src="{% static 'images/paw.bmp'%}" height="37px" width="37px"></li>
                 <li><a href="/">Home</a></li>
                 <li><a href="/picture">Pictures</a></li>
-                <li><a href="/music">Music</a></li>
+                <li><a href="/musicpost">Music</a></li>
                 <li><a href="/yoga">Yoga</a></li>
                 <li><a href="/game">Games</a></li>
                 <li><a href="/fire">Fire</a></li>
             </ul>
         </h1></div>
 
-        <table align="center" WIDTH="100%">
-            <td WIDTH="27%" align="center" valign="top">
+        <table WIDTH="100%">
+            <td WIDTH="27%" valign="top">
 
-                <h3>Lucy Rose – Shiver</h3>
-                <audio preload="auto" loop controls style="width:93%">
+                {% block music %}{% endblock %}
 
-                    <source src="{% static 'music/Lucy Rose Shiver.mp3'%}" type="audio/ogg; codecs=vorbis">
-                    <source src="{% static 'music/Lucy Rose Shiver.mp3'%}" type="audio/mpeg">
-                    Тег audio не поддерживается вашим браузером.
-                    <a href="{% static 'music/Lucy Rose Shiver.mp3'%}">Скачайте музыку</a>.
-                    <span>mew</span>
-                </audio>
-                <div class="block">
+                <div class="block" align="center">
                     News:<hr>
+                    Теперь вы можете выбрать один из нескольких <a href="/musicpost">альбомов</a> с расслаляющей музыкой<br><br>
                     Мы добавили первые статьи по <a href="/yoga">йоге</a><br><br>
                     Ура, теперь на сайте есть <a href="/picture">картинки</a><br><br>
                 </div>

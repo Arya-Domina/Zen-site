@@ -1,0 +1,53 @@
+{% extends "app/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <p>{{ post.title }}</p>
+    <p>{{ post.content|linebreaks }}</p>
+
+{% endblock %}
+{% block music %}
+<div id="container1">
+	<div id="audio-image">
+		<img class="cover" >
+	</div>
+	<div id="audio-player">
+		<div id="audio-info">
+			<span class="artist"></span> - <span class="title"></span>
+		</div>
+		 <input id="volume" type="range" min="0" max="10" value="5" />
+		 <br>
+		 <div id="buttons">
+		 <span>
+			<button id="prev"></button>
+			<button id="play"></button>
+			<button id="pause"></button>
+			<button id="stop"></button>
+			<button id="next"></button>
+			</span>
+		 </div>
+		 <div class="clearfix"></div>
+		 <div id="tracker">
+			<div id="progressBar">
+				<span id="progress"></span>
+			</div>
+			<span id="duration"></span>
+		 </div>
+		 <div class="clearfix"></div>
+		<div id="container2" style="height: 147px">
+<ul id="playlist">
+		{% for muse in posts %}
+					<li song="{{ muse.musicfile }}" cover="{{ post.image }}" artist="{{ muse.artist }}">{{ muse.name }}</li>
+		{% endfor %}
+</ul>
+</div>
+	</div>
+</div>
+
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+{% endblock %}
+</html>
