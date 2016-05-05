@@ -2,7 +2,6 @@
 <html>
 {% block content %}
 <div>
-    <p>Сана-Асана!</p>
 
     {% for post in posts %}
         <p><a href="{% url 'post_detail' pky=post.pk %}">{{ post.title }}</a></p>
