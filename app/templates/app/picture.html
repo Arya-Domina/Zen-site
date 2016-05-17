@@ -7,37 +7,51 @@
 
     <title>Zen - picture!</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="{% static 'js/popup_img.js' %}"></script>
+<!--    <script src="{% static 'js/popup_img.js' %}"></script> -->
+
+    <script src="{% static 'js/img.js' %}"></script>
 {% endblock %}
 
 {% block content %}
-<div>
+<div id="layout">
+    <img src="/static/images/p1.jpg" class="image" onclick=BigImg("open","static/images/p1.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p2.jpg" class="image" onclick=BigImg("open","static/images/p2.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p3.jpg" class="image" onclick=BigImg("open","static/images/p3.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p4.jpg" class="image" onclick=BigImg("open","static/images/p4.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p5.jpg" class="image" onclick=BigImg("open","static/images/p5.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p6.jpg" class="image" onclick=BigImg("open","static/images/p6.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p7.jpg" class="image" onclick=BigImg("open","static/images/p7.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p8.jpg" class="image" onclick=BigImg("open","static/images/p8.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p9.jpg" class="image" onclick=BigImg("open","static/images/p9.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p10.jpg" class="image" onclick=BigImg("open","static/images/p10.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p11.jpg" class="image" onclick=BigImg("open","static/images/p11.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p12.jpg" class="image" onclick=BigImg("open","static/images/p12.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p13.jpg" class="image" onclick=BigImg("open","static/images/p13.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p14.jpg" class="image" onclick=BigImg("open","static/images/p14.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p15.jpg" class="image" onclick=BigImg("open","static/images/p15.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p16.jpg" class="image" onclick=BigImg("open","static/images/p16.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p17.jpg" class="image" onclick=BigImg("open","static/images/p17.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p18.jpg" class="image" onclick=BigImg("open","static/images/p18.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p19.jpg" class="image" onclick=BigImg("open","static/images/p19.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p20.jpg" class="image" onclick=BigImg("open","static/images/p20.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p21.jpg" class="image" onclick=BigImg("open","static/images/p21.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p22.jpg" class="image" onclick=BigImg("open","static/images/p22.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p23.jpg" class="image" onclick=BigImg("open","static/images/p23.jpg") alt="Пикча не найдена"/>
+    <img src="/static/images/p24.jpg" class="image" onclick=BigImg("open","static/images/p24.jpg") alt="Пикча не найдена"/>
+
 </div>
 
-    <img src="/static/images/p1.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p2.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p3.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p4.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p5.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p6.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p7.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p8.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p9.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p10.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p11.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p12.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p13.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p14.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p15.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p16.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p17.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p18.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p19.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p20.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p21.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p22.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p23.jpg" class="image" alt="Пикча не найдена"/>
-    <img src="/static/images/p24.jpg" class="image" alt="Пикча не найдена"/>
+<TABLE id="big_img">
+    <TR>
+        <TD align="center">
+            <TABLE>
+                <TR>
+                    <TD id="here_img"></TD>
+                </TR>
+            </TABLE>
+        </TD>
+    </TR>
+</TABLE>
 
 
 {% endblock %}
