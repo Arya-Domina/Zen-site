@@ -8,8 +8,7 @@
 </div>
 {% for post in posts %}
         <p><a href="{% url 'post_detail' pkm=post.pk %}">{{ post.title }}</a></p>
-            {{ post.datetime }}
-            <h2>{{post.get_short_content|linebreaks}}</h2>
+            <h3>{{post.get_short_content|linebreaks}}</h3>
         <!--    {% if post.image.url|length > 0 %}
                 {% if post.image != 'False' %}
                     <img style="max-width:30%" src="{{ post.image.url }}" >
