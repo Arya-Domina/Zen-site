@@ -4,8 +4,9 @@
 {% block content %}
 <div>
     <p>{{ post.title }}</p>
+    <img src="{{ post.image.url }}" align="left">
     <p>{{ post.text|linebreaks }}</p>
-    <img src="{{ post.image.url }}">
+    
 </div>
 {% endblock %}
 </html>
