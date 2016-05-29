@@ -1,6 +1,11 @@
 {% extends 'app/base.html' %}
 {% load staticfiles %}
 <html>
+
+{% block title %}
+    <title>Zen - yoga</title>
+{% endblock %}
+
 {% block content %}
 <div>
     <p>{{ post.title }}</p>
